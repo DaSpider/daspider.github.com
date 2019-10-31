@@ -1,1 +1,35 @@
-Under construcrtion
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <meta name="viewport" content="width=device-width">
+    <title>Monty Hall</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <script src="script.js"></script>
+      <div style="float: right; width: 17%; height: 5000px;" id="out"><br><br><br>&nbsp;123&nbsp;&nbsp;&nbsp; A B<br></div>
+<div style="height: 80px; width: 75%;"><h1>The Monty Hall problem</h1></div>
+<div style="border: 1px dashed; width: 40%; float: right; height: 350px;" id="interface">
+    <h2>Experiment</h2>
+    <p>Subject A never switches, subject B always switches</p>
+    <p>
+    <input type="number" id="num" value="100" min="1" max="1000000" step="1" style="width: 75px;" />
+    <button type="button" onclick="run()">run</button>
+    <button type="button" onclick="step()">+1</button></p>
+    <p id="text"></p>
+</div>
+
+<div style="width: 40%; height: 750px;" id="1">    <p>This experiment tests the probabilities of winning a game show based on <strong>Monty Hall</strong>. The Monty Hall problem is famous for generating <a href="https://www.bbc.com/news/magazine-24045598">heated discussions</a> about the probabilities and outcomes from switching or not switching the chosen door. Refer to this <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem">Wikipedia page</a> to better understand the problem.</p>
+    <p>In the game, the following steps take place:</p>
+    <ol>
+	<li>There are 3 doors, behind one there is a car and behind the other 2, goats</li>
+    <li>The player choses a door</li>
+    <li>The host then opens one of the remaining doors, revealing one of the goats</li>
+    <li>The player has the chance to keep the original choice or switch the the remaining closed door</li>
+    <li>Once the player has chosen, the selected door is opened, revealing the prize</li>
+    </ol>
+    <p>There is a strong argument for always switching. Not intuitively, by eliminating one of the two doors not chosen, the probability collapses into the remaining closed door, as is proven by the experiment. Check the explanation <a href="https://brilliant.org/wiki/monty-hall-problem/">here</a>!</p><h6>9/2019 Rogério Neves</h6></div>
+  </body>
+</html>
